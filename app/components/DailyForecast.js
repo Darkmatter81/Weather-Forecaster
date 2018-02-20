@@ -52,7 +52,7 @@ export default class DailyForecast extends React.Component{
 
         return(
             <div className='daily-forecast'>
-                <h2>5 Day hourly forecast for {this.props.forecast.city.name}, {this.props.forecast.city.country}</h2>
+                <h2>Daily hourly forecast for {this.props.forecast.city.name}, {this.props.forecast.city.country}</h2>
 
                 <table className='day-forecast-table'>
                     {Object.keys(days).map((forecastItem)=>{
@@ -68,7 +68,7 @@ export default class DailyForecast extends React.Component{
                                    return(
                                         <tr key={item.dt}>
                                             <td>
-                                                <img src={'http://openweathermap.org/img/w/' +
+                                                <img src={'https://openweathermap.org/img/w/' +
                                                     item.weather[0].icon + '.png'} />
                                             </td>
                                         

@@ -8,7 +8,7 @@ const getFullUnit = (unitCode) => {
 }
 
 const getCurrentForecast = (city, unit) =>{
-    let requestURL = 'http://api.openweathermap.org/data/2.5/weather?q=' +
+    let requestURL = 'https://api.openweathermap.org/data/2.5/weather?q=' +
                         city  + getFullUnit(unit) +'&APPID='+api_id;
     return axios.get(requestURL).then((obj)=>{
         return obj.data;
@@ -16,7 +16,7 @@ const getCurrentForecast = (city, unit) =>{
 }
 
 const getExtendedForecast = (city, unit) => {     
-    let requestURL = 'http://api.openweathermap.org/data/2.5/forecast?q=' +
+    let requestURL = 'https://api.openweathermap.org/data/2.5/forecast?q=' +
                         city + getFullUnit(unit) +
                         '&APPID='+api_id;
     return axios.get(requestURL).then((obj)=>{

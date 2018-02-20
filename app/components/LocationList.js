@@ -9,7 +9,7 @@ export default class LocationList extends React.Component{
                     <tbody>
                         <tr>
                             <td className='location-current-weather-column'>
-                                <img src='http://openweathermap.org/img/w/04n.png'/>
+                                <img src='https://openweathermap.org/img/w/04n.png'/>
                             </td>
                             <td>
                                 <div >

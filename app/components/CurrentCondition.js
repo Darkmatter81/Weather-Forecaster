@@ -26,7 +26,7 @@ export default class CurrentCondition extends React.Component{
                 <h2>Weather in {forecast.name}, {forecast.sys.country}</h2>
 
                 <div className='current-temperature'>
-                    <img src={'http://openweathermap.org/img/w/' + 
+                    <img src={'https://openweathermap.org/img/w/' + 
                         forecast.weather[0].icon + '.png'}/>
                     <p>{Math.floor(forecast.main.temp)} °{this.props.unit}</p>
                 </div>

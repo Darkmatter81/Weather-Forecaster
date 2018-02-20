@@ -32,10 +32,6 @@ export default class App extends React.Component{
         this.setState({unit}, this.updateCurrentWeather);
     }
 
-    componentWillMount(){
-        this.updateCurrentWeather();
-    }
-
     updateCurrentWeather(){
          this.setState(()=>{
             return {
