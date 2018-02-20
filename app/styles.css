@@ -1,0 +1,184 @@
+body{
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#3C3C3C;
+    font-size: 14px;
+}
+
+p{
+    margin: 10px 0 10px 0;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h1, h2, h3{
+    color: #55AAFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container{
+    max-width: 850px;
+    margin: 0 auto; 
+    height:100%;  
+    padding: 50px;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.search-box input{
+    padding: 6px;
+}
+
+#search-input{
+    border-radius: 5px;
+    border: solid 1px #55AAFF ;
+    margin-right: 5px;
+    color:gray;
+}
+
+input:focus, button:focus{
+   outline:none;
+}
+
+.search-box button{
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #55AAFF;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:active{
+    transform: translateY(1px);
+    background-color:#5597FF;
+}
+
+.search-box button:disabled{
+    background-color: #99BBF1;
+    
+}
+
+.weather-outlook{
+    width: 100%;
+}
+
+.unit-switcher{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.current-condition{
+    width: 350px;
+    margin-right: 60px;
+}
+
+.current-temperature{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.current-temperature p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.current-temperature img{
+    margin-right: 5px;
+    left:200px;
+}
+
+.current-conditions-details{
+    width: 100%;
+}
+
+table, td, tr{
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+.current-conditions-details td{
+    padding: 15px;
+}
+
+.current-conditions-details tr:nth-child(odd) {
+    background-color: #E4E9EF;
+}
+
+.daily-forecast{
+    align-items: ce1nter;
+    width: 100%;
+}
+
+.day-forecast-table img{
+   vertical-align: middle;
+}
+
+.day-forecast-table{
+    width: 100%;
+    border:none;
+}
+
+.day-forecast-table td, 
+.day-forecast-table tr{
+    border-right: none;
+    border-left: none;
+}
+
+
+.day-forecast-table th{
+    text-align: left;
+    padding: 7px;
+    background-color: #E4E9EF;
+    font-size:17px;
+}
+
+.day-forecast-column{
+    width: 90px;
+}
+
+.forecast-description{
+    padding-left: 45px;
+    width: 190px;
+    font-style: italic;
+}
+
+.forecast-temp{
+    display: inline-block;
+    background-color: #aaaaaa;
+    border-radius: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 3px 10px 3px 10px;
+    font-size:11px;
+}
+
+.location-list-table{
+    width:100%;
+}
+
+.location-current-weather-column{
+    width: 90px;
+}
