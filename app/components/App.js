@@ -31,7 +31,7 @@ export default class App extends React.Component{
     onUnitChanged(unit){
         this.setState({unit}, this.updateCurrentWeather);
     }
-
+    
     updateCurrentWeather(){
          this.setState(()=>{
             return {
@@ -62,25 +62,34 @@ export default class App extends React.Component{
 
     render(){
         return(
-            <div className='container'>
-                <div className='content'>
-                    <SearchBox onSubmitCity = {this.handleSearchSubmit}/>
-                    
-                    {this.state.current && this.state.extended &&
-                         <UnitSwitcher unit={this.state.unit} onUnitChanged={this.onUnitChanged}/>
-                    }
-                    {this.state.current && this.state.extended &&
-                        <Outlook current={this.state.current} daily={this.state.extended} unit={this.state.unit}/>
-                    }
-                    {this.state.loading &&
-                        <Loading />
-                    }
+            <div className='container app-container'>
+                <div className='row'>
+                    <div className='col-12'>
+                      <SearchBox onSubmitCity = {this.handleSearchSubmit}/>
+                    </div>
+                </div>
 
-                    {this.state.error && 
-                        <p style={{textAlign:'center'}}>There was an error getting forecast for {this.state.city}. Make sure the city is valid</p>
-                    }
-                 </div>
-            </div>
+                {this.state.current && this.state.extended &&
+                    <div className='row justify-content-center'>
+                      <div className='col-2 offset-md-8'>
+                        <UnitSwitcher unit={this.state.unit} onUnitChanged={this.onUnitChanged}/>
+                      </div>
+                    </div>
+                }
+                {this.state.current && this.state.extended &&
+                  <div className='r111ow'>
+                      <Outlook current={this.state.current} daily={this.state.extended} unit={this.state.unit}/>
+                  </div>
+                }
+
+                {this.state.loading &&
+                    <Loading />
+                }
+
+                {this.state.error && 
+                    <p style={{textAlign:'center', marginTop:30}}>There was an error getting forecast for {this.state.city}. Make sure the city is valid</p>
+                }
+              </div>
         );
     }
 }

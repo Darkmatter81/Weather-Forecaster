@@ -5,7 +5,7 @@ export default class Loading extends React.Component{
         super(props)
         this.state = {loadingText: 'Loading',
                       ticker: null};
-        
+
     }
 
     onTicker(){
@@ -37,7 +37,7 @@ export default class Loading extends React.Component{
     
     render(){
         return(
-            <h3 style={{textAlign:'center'}}>{this.state.loadingText}</h3>
+            <h3 style={{textAlign:'center', marginTop:40}}>{this.state.loadingText}</h3>
         )
     }
 }

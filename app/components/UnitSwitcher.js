@@ -23,10 +23,12 @@ export default class UnitSwitcher extends React.Component{
                 <form action="">
                     <input id ='metric' type="radio"
                            name="unit" value="C"
-                           onChange={this.onUnitChanged}/> °C
+                           onChange={this.onUnitChanged}/> 
+                    <span>°C</span>
                     <input id ='imperial' type="radio" 
                            name="unit" value="F"
-                           onChange={this.onUnitChanged}/> °F
+                           onChange={this.onUnitChanged}/>
+                    <span>°F</span>
                 </form>
             </div>
         );

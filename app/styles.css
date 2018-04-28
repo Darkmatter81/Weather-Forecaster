@@ -17,20 +17,17 @@ h1, h2, h3{
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-.container{
-    max-width: 850px;
+.app-container{
+    max-width: 1050px;
     margin: 0 auto; 
     height:100%;  
-    padding: 50px;
+    padding: 20px;
 }
 
 .search-box{
     display: flex;
     justify-content: center;
-    padding-top:30px;
-    padding-bottom:30px;
+    margin-top:30px;
 }
 
 .search-box input{
@@ -65,7 +62,6 @@ input:focus, button:focus{
 
 .search-box button:disabled{
     background-color: #99BBF1;
-    
 }
 
 .weather-outlook{
@@ -73,25 +69,22 @@ input:focus, button:focus{
 }
 
 .unit-switcher{
-    display: flex;
-    justify-content: flex-end;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.row{
-    display: flex;
-    justify-content:flex-start;
+.unit-switcher span{
+    margin-left: 5px;
 }
-
-.column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+.unit-switcher span:nth-of-type(1){
+    margin-right: 20px;
+} 
 
 .current-condition{
-    width: 350px;
+    width:100%;
     margin-right: 60px;
+    margin-bottom: 30px;
 }
 
 .current-temperature{
@@ -127,8 +120,11 @@ table, td, tr{
 }
 
 .daily-forecast{
-    align-items: ce1nter;
     width: 100%;
+}
+
+.daily-forecast h2{
+    margin-bottom: 30px;
 }
 
 .day-forecast-table img{

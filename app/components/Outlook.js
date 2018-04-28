@@ -4,15 +4,17 @@ import UnitSwitcher from './UnitSwitcher';
 import CurrentCondition from './CurrentCondition';
 import DailyForecast from './DailyForecast';
 
-
 export default class Outlook extends React.Component{
     render(){
         return (
-            <div className='weather-outlook'>
-                <div className='row'>
-                    <CurrentCondition className='column'
+            <div className='row justify-content-center'>
+                <div className='col-12 col-sm-8 col-md-4'>
+                    <CurrentCondition
                         forecast={this.props.current} unit={this.props.unit}/>
-                    <DailyForecast className='column'
+                </div>
+
+                <div className='col-12 col-sm-10 col-md-8'>
+                    <DailyForecast
                         forecast={this.props.daily} unit={this.props.unit}/>
                 </div>
             </div>
